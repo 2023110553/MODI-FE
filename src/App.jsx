@@ -1,13 +1,11 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-family: system-ui, sans-serif;
-`
+import Kiosk from './pages/kiosk/Kiosk.jsx'
+import { KioskGlobalStyle } from './pages/kiosk/styles.js'
 
 export default function App() {
   return (
-    <main>
-      <Title>MODI 키오스크</Title>
-    </main>
+    <>
+      <KioskGlobalStyle />
+      <Kiosk />
+    </>
   )
 }
